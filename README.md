@@ -60,14 +60,14 @@ url=https://tutorialsninja.com/demo
 
 
 ---
-# 🚀 Selenium Automation Utilities – Task 2 & Task 3
+## 🚀 Selenium Automation Utilities – Task 2 & Task 3
 
 Welcome to the automation utilities module of our advanced Selenium Hybrid Framework!  
 This section demonstrates two powerful browser and UI interaction methods that make our framework dynamic, scalable, and reusable. 💻✨
 
 ---
 
-## 📌 Task 2: Dynamic Browser and URL Launcher
+### 📌 Task 2: Dynamic Browser and URL Launcher
 
 ### 🔧 Method Signature
 ```java
@@ -82,6 +82,9 @@ optBrowserAndUrl(String browserName, String urlLink, String propFileName)
 | 💎 **Highlights** | ✅ Simplified Access<br>🎯 DOM Consistency<br>📚 Easy to Maintain      |
 
 ---
+```java
+ clickSpecificElementOfDropDownOfMyAccount(String NavBarElementName, String innerDropDownElement)
+
 
 | 🔑 Attribute      | 💡 Description                                                                                                                        |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
