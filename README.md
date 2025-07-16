@@ -59,53 +59,35 @@ browser=chrome
 url=https://tutorialsninja.com/demo
 
 
-# 🚀 Selenium Automation Utilities - Task 2 & Task 3
+---
+# 🚀 Selenium Automation Utilities – Task 2 & Task 3
 
-Welcome to the automation utilities section of our hybrid Selenium TestNG framework! 🎯  
-Below are the key utility methods implemented to boost browser handling and dynamic web interaction efficiency.
+Welcome to the automation utilities module of our advanced Selenium Hybrid Framework!  
+This section demonstrates two powerful browser and UI interaction methods that make our framework dynamic, scalable, and reusable. 💻✨
 
 ---
 
-## 📌 Task 2: Dynamic Browser & URL Launcher
+## 📌 Task 2: Dynamic Browser and URL Launcher
 
-| 🔧 Method Name | `optBrowserAndUrl(String browserName, String urlLink, String propFileName)` |
-|---------------|-----------------------------------------------------------------------------|
-| 📋 **Purpose** | Launches a browser dynamically based on input and opens a URL.             |
-| 🧩 **Parameters** | 1. `browserName` – Browser to launch (e.g., `"chrome"`, `"firefox"`). <br>2. `urlLink` – URL to open. <br>3. `propFileName` – Properties file to retrieve any required settings. |
-| 🔄 **Core Logic** | Reads properties, sets browser options, and launches the site dynamically. |
-| 💎 **Highlights** | ✨ Configurable 🔄 Reusable ♻️ Lightweight |
+### 🔧 Method Signature
+```java
+optBrowserAndUrl(String browserName, String urlLink, String propFileName)
+
+---
+| 🔑 Attribute      | 💡 Description                                                        |
+| ----------------- | --------------------------------------------------------------------- |
+| 📋 **Purpose**    | Clicks any top-level static element in the website's navigation bar.  |
+| 🧩 **Parameter**  | `elementName` – The visible text of the navbar item (e.g., `"Login"`) |
+| 💼 **Use Case**   | Used when clicking items like `Home`, `Contact`, `About Us`, etc.     |
+| 💎 **Highlights** | ✅ Simplified Access<br>🎯 DOM Consistency<br>📚 Easy to Maintain      |
 
 ---
 
-## 📌 Task 3: `Navbar Interaction Methods`
-
-### 🔹 Method: `clickSpecificElementOfNavbarElements(String elementName)`
-
-| 📋 **Purpose** | Clicks directly on any top-level navigation bar element. |
-|---------------|-----------------------------------------------------------|
-| 🧩 **Parameter** | `elementName` – Text of the navbar element to click (e.g., `"Login"`, `"Register"`). |
-| 🎯 **Usage** | Used for clicking static elements without drop-downs. |
-| 🛠️ **Use Case** | Clicking `Contact Us`, `Home`, `About`, etc., in the navbar. |
-| 💎 **Highlights** | 🔍 Accurate Click 🎯 Fast Interaction ✅ Clean DOM access |
-
----
-
-### 🔸 Method: `clickSpecificElementOfDropDownOfMyAccount(String NavBarElementName, String innerDropDownElement)`
-
-| 📋 **Purpose** | Handles dropdowns within navbar (like "My Account" > "Register"). |
-|---------------|--------------------------------------------------------------------|
-| 🧩 **Parameters** | 1. `NavBarElementName` – Main navbar item (e.g., `"My Account"`). <br>2. `innerDropDownElement` – Dropdown sub-item (e.g., `"Login"` or `"Register"`). |
-| 🎯 **Usage** | Clicks elements nested under dropdown structures. |
-| 💡 **Scenario** | For dynamic drop-downs where direct click fails due to hidden elements. |
-| 💎 **Highlights** | 🧠 Intelligent Navigation 💥 Custom Logic 🎯 Reliable Interaction |
-
----
-
-## 🛠️ Framework Highlights
-
-- 🧩 **Modular Methods** – Each function performs a distinct task for easier debugging & reusability.
-- 🔐 **Properties-Driven** – All configurations are handled via `.properties` files.
-- 🌐 **Cross-Browser Support** – Works with Chrome, Firefox, Edge, and more.
-- 📄 **TestNG Powered** – Well-integrated with TestNG for flexible test execution.
+| 🔑 Attribute      | 💡 Description                                                                                                                        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 📋 **Purpose**    | Clicks nested elements within a dropdown under a navbar element.                                                                      |
+| 🧩 **Parameters** | `NavBarElementName` – Parent menu item (e.g., `"My Account"`) <br>`innerDropDownElement` – Child dropdown option (e.g., `"Register"`) |
+| 💼 **Use Case**   | Useful when dropdown menus need two-level interaction handling.                                                                       |
+| 💎 **Highlights** | 🧠 Smart Dropdown Handling<br>💥 Dynamic Locators<br>✅ Robust Navigation                                                              |
 
 ---
