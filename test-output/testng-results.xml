@@ -2,15 +2,19 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-17T00:57:55 IST" name="Default suite" finished-at="2025-07-17T00:57:55 IST" duration-ms="172">
+  <suite started-at="2025-07-17T03:09:11 IST" name="Default suite" finished-at="2025-07-17T03:09:13 IST" duration-ms="1975">
     <groups>
     </groups>
-    <test started-at="2025-07-17T00:57:55 IST" name="Default test" finished-at="2025-07-17T00:57:55 IST" duration-ms="172">
+    <test started-at="2025-07-17T03:09:11 IST" name="Default test" finished-at="2025-07-17T03:09:13 IST" duration-ms="1975">
       <class name="org.pro.tests.NinjaTutorialsMain">
-        <test-method signature="testOne()[pri:0, instance:org.pro.tests.NinjaTutorialsMain@6973b51b]" started-at="2025-07-17T00:57:55 IST" name="testOne" finished-at="2025-07-17T00:57:55 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="testOne()[pri:0, instance:org.pro.tests.NinjaTutorialsMain@52bf72b5]" started-at="2025-07-17T03:09:06 IST" name="testOne" finished-at="2025-07-17T03:09:11 IST" duration-ms="4575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOne -->
+        <test-method signature="TaskOne()[pri:0, instance:org.pro.tests.NinjaTutorialsMain@52bf72b5]" started-at="2025-07-17T03:09:11 IST" name="TaskOne" finished-at="2025-07-17T03:09:13 IST" duration-ms="1869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaskOne -->
       </class> <!-- org.pro.tests.NinjaTutorialsMain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
