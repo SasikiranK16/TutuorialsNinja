@@ -77,7 +77,7 @@ Below are the key utility methods implemented to boost browser handling and dyna
 
 ---
 
-## 📌 Task 3: Navbar Interaction Methods
+## 📌 Task 3: `Navbar Interaction Methods`
 
 ### 🔹 Method: `clickSpecificElementOfNavbarElements(String elementName)`
 
