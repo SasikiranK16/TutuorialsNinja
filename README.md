@@ -63,4 +63,29 @@ This project is part of my **automation upskilling journey**, where I focus on b
 
 1. 🔁 Clone the repository  
 ```bash
+
 git clone https://github.com/yourusername/tutorials-ninja-selenium-framework.git
+
+# 🧪 Task 1 — Dynamic Browser Launch using `.properties` File
+
+📌 **Goal:**  
+To retrieve data from a `.properties` file and use it to launch different browsers dynamically (e.g., Chrome, Firefox, Edge) as per the configuration — a core step in building a flexible automation framework.
+
+---
+
+## 📋 Task Summary
+
+| 🔢 Step | 🛠️ Action | 📄 Description |
+|--------|-----------|----------------|
+| 1️⃣ | **Create `config.properties`** | Store keys like `browser`, `url`, etc., to externalize test setup. |
+| 2️⃣ | **Build `PropertyReader` Utility** | Java class to fetch values from the properties file using `java.util.Properties`. |
+| 3️⃣ | **Modify BaseTest / DriverFactory** | Use the `browser` value from the properties file to launch Chrome, Firefox, etc. |
+| 4️⃣ | **Run TestNG Test** | Execute test and verify if the correct browser launches with the given URL. |
+
+---
+
+## 🗂️ Sample `config.properties`
+
+```properties
+browser=chrome
+url=https://tutorialsninja.com/demo
